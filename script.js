@@ -46,20 +46,19 @@ function draw() {
   }
 }
 
-// 🔵 Smiley face în cerc
+
 function smileyWhite(x, y, diameter, faceColor) {
-  // Fața
   fill(faceColor);
   stroke(0);
   strokeWeight(1);
   circle(x, y, diameter);
 
-  // Ochi
+
   let eyeOffsetX = diameter * 0.2;
   let eyeOffsetY = diameter * 0.2;
   let eyeSize = diameter * 0.1;
 
-  fill(0); // negru
+  fill(0);
   noStroke();
   circle(x - eyeOffsetX, y - eyeOffsetY, eyeSize); // ochi stâng
   circle(x + eyeOffsetX, y - eyeOffsetY, eyeSize); // ochi drept
